@@ -1,0 +1,27 @@
+reset;
+model transportation-sensitivity.mod
+data transportation-sensitivity.dat
+
+option presolve 0;
+option solver "./cplex";
+option cplex_options 'sensitivity presolve=0';
+solve;
+
+display x;
+display d;
+
+display demand.slack;
+
+display {i in I,j in J: x[i,j]==0}
+   (x[i,j].rc, x[i,j].down, x[i,j].current, x[i,j].up);
+
+display {i in I}
+   (availability[i].slack, availability[i].dual, 
+    availability[i].down, availability[i].current, availability[i].up);
+
+
+
+
+
+
+
