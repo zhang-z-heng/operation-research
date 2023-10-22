@@ -1,0 +1,5 @@
+model lotsizing.mod;
+data lotsizing.dat;
+option solver cplex;
+solve;
+display x,v,z;
