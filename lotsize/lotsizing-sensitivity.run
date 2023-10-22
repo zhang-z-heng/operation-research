@@ -1,0 +1,38 @@
+model lotsizing-sensitivity.mod
+data lotsizing-sensitivity.dat
+
+option presolve 0;
+option relax_integrality 1;
+option solver cplex;
+option cplex_options 'sensitivity presolve=0';
+
+solve;
+
+display x;
+
+#question 2
+display production.current;
+display production.dual;
+display production.down, production.up;
+
+#question 3
+display demand["A1"].current;
+display demand["A1"].dual;
+display demand["A1"].down, demand["A1"].up;
+#
+##question 4
+display demand["A3"].current;
+display demand["A3"].dual;
+display demand["A3"].down, demand["A3"].up;
+#
+#question 5
+display demand["A2"].current;
+display demand["A2"].dual;
+display demand["A2"].down, demand["A2"].up;
+#
+##Aggregate display
+#display {j in J} 
+#   (demand[j].slack, demand[j].dual,
+##    demand[j].down, demand[j].current, demand[j].up);
+#
+#display x.rc;
