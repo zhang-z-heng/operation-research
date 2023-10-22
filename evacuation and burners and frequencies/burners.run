@@ -1,0 +1,13 @@
+model burners.mod
+data burners.dat
+option solver cplex;
+
+problem pb1: x,capacity,packing;
+
+problem pb2: x,capacity,packing,budget;
+
+solve pb1;
+display x;
+
+solve pb2;
+display x;

@@ -1,0 +1,35 @@
+data;
+
+set V := Duomo Cordusio SanBabila Missori Montenapoleone Cairoli Cadorna Lanza 
+	 S1 S2 S3 S4 S5 S6;
+
+set T := Duomo Cordusio SanBabila Missori Montenapoleone Cairoli Cadorna Lanza;
+
+param s := Duomo;
+
+param: E: c := 
+	Duomo Cordusio		0.2,
+	Duomo Missori	 	0.2,
+	Duomo S4		0.2,
+	Cordusio S2		0.2,
+	Cordusio S1		0.225,
+	Cordusio Cairoli	0.4,
+	Missori SanBabila	0.2125,
+	Missori S5		0.35,
+	S6 SanBabila		0.4,
+	S6 S5			0.35,
+	S6 Duomo		0.4,
+	SanBabila S5		0.225,
+	SanBabila Montenapoleone 0.6,
+	S5 S4	  		0.2,
+	S4 Montenapoleone	0.35,
+	S4 Cordusio		0.25,
+	Montenapoleone S3	0.25,
+	Montenapoleone Lanza	0.25,
+	S3 Cairoli     		0.05,
+	S3 Cordusio		0.15,
+	S2 S1			0.0875,
+	Lanza Cairoli		0.2,
+	Cairoli Cadorna		0.2,
+	S1 Cadorna		0.15
+;

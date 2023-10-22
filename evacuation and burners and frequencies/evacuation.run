@@ -1,0 +1,5 @@
+model evacuation.mod;
+data evacuation.dat;
+option solver cplex;
+solve;
+display x;

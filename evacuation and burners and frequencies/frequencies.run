@@ -1,0 +1,16 @@
+model frequencies.mod
+data frequencies.dat
+option solver cplex;
+
+problem pb1: x,y,use,
+   assignment,activation,interference;
+
+problem pb2: x,y,use,
+   assignment,activation,interference2;
+
+solve pb1;
+display x;
+
+solve pb2;
+display x;
+
