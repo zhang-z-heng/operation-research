@@ -1,0 +1,38 @@
+data;
+
+set V := a b c d e f g h i j k l m;
+
+param s := c;
+param t := f;
+
+param: E: k := 
+	a b 19
+	a c 7
+	a d 13
+	a e 2
+	a f 9
+	b c 14
+	b f 10
+	b g 18
+	b h 2
+	c d 11
+	c h 7
+	c i 15
+	c j 16
+	d e 17
+	d j 11
+	d k 16
+	e f 15
+	e k 8
+	e l 13
+	f g 12
+	f l 19
+	f m 4
+	g h 9
+	g m 5
+	h i 14
+	i j 3
+	j k 17
+	k l 20
+	l m 1
+;
