@@ -1,0 +1,8 @@
+model olympicgames.mod
+data olympicgames.dat
+option solver cplex;
+#option cplex_options 'mipdisplay 5 presolve=0';
+#option relax_integrality 1;
+solve;
+display x;
+

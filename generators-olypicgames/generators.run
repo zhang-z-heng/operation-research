@@ -1,0 +1,7 @@
+model generators.mod
+data generators.dat
+option solver cplex;
+#option cplex_options 'mipdisplay 5 presolve=0';
+#option relax_integrality 1;
+solve;
+display x,x2,y,y2,z;

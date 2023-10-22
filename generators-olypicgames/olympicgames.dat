@@ -1,0 +1,32 @@
+data;
+
+set I := hundred twohundred thousand crossCountry discus javelin football baseball;
+
+param G := 10;
+
+param T := 180;
+
+param n := 7;
+
+param c:	hundred twohundred thousand crossCountry discus javelin football baseball :=
+hundred		0	1	0	1	0	1	0	0
+twohundred	0	0	1	1	0	0	0	0
+thousand		0	0	0	1	0	0	1	1
+crossCountry	0	0	0	0	0	1	0	0
+discus		0	0	0	0	0	1	0	0
+javelin	0	0	0	0	0	0	0	1
+football		0	0	0	0	0	0	0	1
+baseball	0	0	0	0	0	0	0	0
+;
+
+param:		m	w	t:=
+hundred		2	7	15
+twohundred	2	8	15
+thousand	2	10	20
+crossCountry	1	4	60
+discus		3	5	30
+javelin	        3	6	30
+football	4	10	100
+baseball	4	9	100
+;
+
