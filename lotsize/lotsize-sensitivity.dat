@@ -1,0 +1,28 @@
+data;
+
+set J := A1 A2 A3;
+
+param B := 22;
+
+param d :=
+   A1  4300
+   A2  4500
+   A3  5225
+;
+param r :=
+   A1  120
+   A2  100
+   A3  115
+;
+
+param c :=
+   A1  74
+   A2  53
+   A3  66
+;
+
+param q :=
+   A1  500
+   A2  450
+   A3  550
+;
