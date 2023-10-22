@@ -1,0 +1,18 @@
+model purificationplants.mod
+data purificationplants.dat
+option solver cplex;
+
+problem pb1: x,cost,covering;
+
+problem pb2: x,cost,partitioning;
+
+problem pb3: x,cost,covering,quantity;
+
+solve pb1;
+display x;
+
+solve pb2;
+display x;
+
+solve pb3;
+display x;
