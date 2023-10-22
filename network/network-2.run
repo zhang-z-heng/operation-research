@@ -1,0 +1,6 @@
+model network-2.mod
+data network-2.dat
+option solver cplex;
+solve;
+display x;
+
